@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-univer-htmlcss-1.github.io/2579223-sedona-2/4/">
+</head>
+  <body>
+      <header class="main-page-header">
+          <nav class="page-navigation">
+            <img class="main-logo" alt="Логотип Седоны" src="images/logo.svg" width="140" height="70">
+            <ul class="navigation-list">
+              <li><a class="navigation-link" href="#">Главная</a></li>
+              <li><a class="navigation-link" href="#">О Седоне</a></li>
+              <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+            </ul>
+          </nav>
+          <ul class="navigation-items">
+            <li class="icon-nav-link"><a class="navigation-link navigation-item" href="#">Поиск</a></li>
+            <li class="icon-nav-link"><a class="navigation-link navigation-item" href="#">Избранное</a></li>
+            <li><a class="button-small" href="#">Хочу сюда!</a></li>
+          </ul>
+      </header>
+
+      <main class="main-index">
+        <section class="welcome-section">
+          <img src="images/welcome_to_sedona.png" height="351" width="457" class="welcome-img" alt="Добро пожаловать в великолепную Седону">
+          <h1 class="visually-hidden">Седона</h1>
+        </section>
+
+        <section class="advanteges">
+          <header>
+            <h2 class="visually-hidden">Преимущества Седоны</h2>
+            <p class="section-header-description">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="section-preview">Рассмотрим причины, по которым Седона круче, чем гранд-Каньон!</p>
+          </header>
+
+          <ol class="advanteges-list">
+            <li class="advantage-with-img">
+              <h3 class="advanteges-name">Настоящий городок</h3>
+              <p class="advanteges-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img src="images/sedona_town.jpg" width="800" height="385" class="sedona-photo" alt="Как выглядит городок">
+            </li>
+            <li class="line-advanteges first-advantege">
+              <h3 class="advanteges-name">Небольшая площадь</h3>
+              <p class="advanteges-description">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="line-advanteges second-advantege">
+              <h3 class="advanteges-name">Красивая дорога</h3>
+              <p class="advanteges-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="line-advanteges first-advantege">
+              <h3 class="advanteges-name">Мало туристов</h3>
+              <p class="advanteges-description">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+            <li class="advantage-with-img">
+              <img src="images/devils_brige.jpg" width="800" height="385" class="devil-bridge-photo" alt="Фото моста дьявола">
+              <h3 class="advanteges-name">Там есть мост дьявола</h3>
+              <p class="advanteges-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="come-to-sedona">
+          <header>
+            <h2 class="visually-hidden">Предложения</h2>
+            <p class="section-header-description">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="section-preview">Опытный персонал и качественное обслуживание!</p>
+          </header>
+
+          <ul class="offers-list">
+            <li class="offers-item first-offer-item">
+              <img src="images/advantage_icon_home.svg" width="75" height="72" class="offer-logo" alt="Предложения по жилью">
+              <h3 class="offer-title">Жильё</h3>
+              <p class="offer-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="offers-item">
+              <img src="images/advantage_icon_food.svg" width="75" height="72" class="offer-logo" alt="Предложения по еде">
+              <h3 class="offer-title">Еда</h3>
+              <p class="offer-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="offers-item first-offer-item">
+              <img src="images/advantage_icon_presents.svg" width="75" height="72" class="offer-logo" alt="Предложения по сувенирам">
+              <h3 class="offer-title">Сувениры</h3>
+              <p class="offer-description">Не только китайского, но и настоящего местного производства!</p>
+            </li>
+          </ul>
+          <h3 class="offer-title">Заинтересовались?</h3>
+          <p class="offer-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a href="catalog.html" class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </section>
+
+        <section class="subscribe">
+          <header>
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          </header>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="user-email" class="visually-hidden">Email</label>
+            <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="user-email">
+            <button type="submit" class="button-blue">
+              Подписаться
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <h2 class="visually-hidden">Свяжитесь с нами</h2>
+        <h3 class="visually-hidden">Наши соц сети</h3>
+        <ul class="social-media-list">
+          <li class="vk">
+            <a href="#" class="vk-link">Свяжитесь с нами в VK</a>
+          </li>
+          <li class="tg">
+            <a href="#" class="tg-link">Свяжитесь с нами в Telegram</a>
+          </li>
+          <li class="youtube">
+            <a href="#" class="youtube-link">Свяжитесь с нами в Youtube</a>
+          </li>
+        </ul>
+        <h3 class="visually-hidden">Наш контактный телефон</h3>
+        <address class="footer-contacts-address">
+          <a class="contact-phone" href="tel:88121212">+7 (812) 812-12-12</a>
+        </address>
+        <img src="images/htmlacademy_logo.svg" width="115" height="33" class="html-academy-logo" alt="Логотип компании htmlacademy">
+      </footer>
+
+  </body>
+</html>
