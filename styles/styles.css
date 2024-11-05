@@ -13,18 +13,60 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     color: #000000;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-page-header {
-    background-color: #ffffff;
+    background-color: #F2F2F2;
     color: #000000;
+}
+
+.navigation {
+    background-color: #ffffff;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-logo {
+    margin: 0;
+    margin-left: 70px;
+    padding: 0;
+    width: 140px;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 507px;
+}
+
+.navigation-items {
+    width: 268px;
+    margin-left: auto;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .navigation-link {
@@ -43,6 +85,34 @@ body {
     background-image: url("../images/main_background.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    height: 485px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.welcome-img {
+    display: flex;
+    margin-top: 51px;
+}
+
+.advantages-header {
+    margin: 0 auto;
+    height: 282px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.advanteges-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .visually-hidden {
@@ -50,6 +120,7 @@ body {
 }
 
 .section-header-description {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
     text-transform: uppercase;
@@ -57,20 +128,25 @@ body {
     background-color: #ffffff;
     line-height: 36px;
     text-align: center;
+    width: 620px;
 }
 
 .section-preview {
+    margin: 0;
     color: #333333;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
     background-color: #ffffff;
     text-align: center;
+    width: 651px;
 }
 
 .advantage-with-img {
     color: #ffffff;
     background-color: #82B3D3;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advanteges-name {
@@ -82,6 +158,8 @@ body {
 
 .line-advanteges {
     color: #000000;
+    width: 400px;
+    height: 385px;
 }
 
 .first-advantege {
@@ -151,6 +229,7 @@ body {
     background-color: #756157;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    height: 414px;
 }
 
 .subscribe-title {
@@ -161,6 +240,7 @@ body {
     color: inherit;
     line-height: 36px;
     text-align: center;
+    margin: 0;
 }
 
 .contact-phone {
@@ -178,6 +258,13 @@ body {
     background-image: url('../images/catalog_header_background.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
+    height: 412px;
+}
+
+.filters-buttons {
+    display: flex;
+    width: 191px;
+    flex-wrap: wrap;
 }
 
 .inner-main-title {
@@ -187,6 +274,7 @@ body {
     color: #ffffff;
     line-height: 78px;
     text-align: left;
+    margin: 0;
 }
 
 .filter-name {
@@ -218,10 +306,32 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
+}
+
+.results-header-container {
+    height: 139px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .changes-display-link {
     color: #000;
+}
+
+.catalog-filter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+}
+
+.hotel-list-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hotel-card-link {
@@ -252,6 +362,7 @@ body {
 .subscribe-inner {
     background-color: #ffffff;
     color: #000000;
+    height: 414px;
 }
 
 .subcribe-description-inner {
@@ -271,4 +382,48 @@ body {
 .pagination-current {
     color: #000000;
     background-color: #F2F2F2;
+}
+
+.sedona-photo {
+    margin: 0;
+}
+
+.advantage-container {
+    width: 400px;
+    height: 385px;
+}
+
+.come-to-sedona-header {
+    margin: 0 auto;
+    height: 246px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1200px;
+}
+
+.offers-item {
+    width: 400px;
+    height: 385px;
+}
+
+.interesting-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 592px;
+    height: 406px;
+    text-align: center;
+}
+
+.footer-container {
+    width: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }

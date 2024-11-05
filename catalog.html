@@ -7,22 +7,23 @@
   </head>
   <body>
     <header class="main-page-header">
-      <nav class="page-navigation">
+      <nav class="navigation">
         <img class="main-logo" alt="Логотип Седоны" src="images/logo.svg" width="140" height="70">
         <ul class="navigation-list">
           <li><a class="navigation-link" href="index.html">Главная</a></li>
           <li><a class="navigation-link" href="#">О Седоне</a></li>
           <li><a class="navigation-link" href="#">Гостиницы</a></li>
         </ul>
+        <ul class="navigation-list navigation-items">
+          <li class="icon-nav-link"><a class="navigation-link navigation-item" href="#">Поиск</a></li>
+          <li class="icon-nav-link"><a class="navigation-link navigation-item" href="#">Избранное</a></li>
+          <li><a class="button button-small" href="#">Хочу сюда!</a></li>
+        </ul>
       </nav>
-      <ul class="navigation-items">
-        <li class="icon-nav-link"><a class="navigation-item" href="#">Поиск</a></li>
-        <li class="icon-nav-link"><a class="navigation-item" href="#">Избранное</a></li>
-        <li><a class="button button-small" href="#">Хочу сюда!</a></li>
-      </ul>
     </header>
 
-      <main class="inner-main">
+      <main class="main-container inner-main">
+        <div class="page-container">
         <div class="catalog-header-filters-background">
           <header class="inner-header">
             <h1 class="inner-main-title">Гостиницы Седоны</h1>
@@ -106,7 +107,7 @@
         </div>
 
         <section class="results">
-          <header class="results-header">
+          <header class="results-header results-header-container">
             <h2 class="visually-hidden">Подходящие варианты проживания</h2>
             <p class="results-amount">Найдено гостиниц: 38</p>
             <select class="select-control" aria-label="Сортировка">
@@ -124,7 +125,7 @@
               <span>Показать список</span>
             </a>
           </header>
-          <ul class="hotel-list">
+          <ul class="hotel-list-container">
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/amara_resort_and_spa.jpg" height="212" width="300" alt="Фото гостиницы">
@@ -263,9 +264,10 @@
             </button>
           </form>
         </section>
+      </div>
       </main>
 
-      <footer>
+      <footer class="footer-container">
         <h2 class="visually-hidden">Свяжитесь с нами</h2>
         <h3 class="visually-hidden">Наши соц сети</h3>
         <ul class="social-media-list">
