@@ -41,9 +41,9 @@
           <section class="hotels-catalog">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
+              <fieldset class="small-fildset catalog-filter-group">
                 <legend class="filter-name">Инфраструктура</legend>
-                <ul>
+                <ul class="filters-items">
                   <li>
                     <label class="checkbox-text">
                       <input type="checkbox" class="infrastructure-point-item" name="pool" checked>
@@ -65,9 +65,9 @@
                 </ul>
               </fieldset>
   
-              <fieldset class="catalog-filter-group">
+              <fieldset class="small-fildset catalog-filter-group">
                 <legend class="filter-name">Тип жилья</legend>
-                <ul>
+                <ul class="filters-items">
                   <li>
                     <label class="checkbox-text">
                       <input type="radio" class="accomodation-type-point-item" name="accomodation-type" value="hotel" checked>
@@ -89,7 +89,7 @@
                 </ul>
               </fieldset>
   
-              <fieldset class="catalog-filter-group">
+              <fieldset class="large-fieldset catalog-filter-group">
                 <legend class="filter-name">Стоимость, ₽:</legend>
                 <label class="price-filter">
                   от
@@ -100,10 +100,11 @@
                   <input class="price" type="number" name="max_price" min="0" placeholder="9000">
                 </label>
               </fieldset>
-  
-              <button type="submit" class="button button-small button-blue">Применить</button>
-              <button type="reset" class="button button-small button-transparent">Сбросить</button>
-            </form>
+              <div class="filters-buttons">
+                <button type="submit" class="button button-small button-blue">Применить</button>
+                <button type="reset" class="button button-small button-transparent">Сбросить</button>
+              </div>
+              </form>
           </section>
         </div>
 
@@ -116,15 +117,17 @@
               <option value="cheap">Сначала дешёвое</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <a href="#" class="changes-display-link">
-              <span>Показать матрицу</span>
-            </a>
-            <a href="#" class="changes-display-link">
-              <span>Показать карточки</span>
-            </a>
-            <a href="#" class="changes-display-link">
-              <span>Показать список</span>
-            </a>
+            <div class="display-links-container">
+              <a href="#" class="changes-display-link">
+                <span>Матрица</span>
+              </a>
+              <a href="#" class="changes-display-link">
+                <span>Карточки</span>
+              </a>
+              <a href="#" class="changes-display-link">
+                <span>Список</span>
+              </a>
+            </div>
           </header>
           <ul class="hotel-list-container">
             <li class="hotel-card">
@@ -268,25 +271,33 @@
       </div>
       </main>
 
-      <footer class="footer-container">
-        <h2 class="visually-hidden">Свяжитесь с нами</h2>
-        <h3 class="visually-hidden">Наши соц сети</h3>
-        <ul class="social-media-list">
-          <li class="vk">
-            <a href="#" class="vk-link">Свяжитесь с нами в VK</a>
-          </li>
-          <li class="tg">
-            <a href="#" class="tg-link">Свяжитесь с нами в Telegram</a>
-          </li>
-          <li class="youtube">
-            <a href="#" class="youtube-link">Свяжитесь с нами в Youtube</a>
-          </li>
-        </ul>
-        <h3 class="visually-hidden">Наш контактный телефон</h3>
-        <address class="footer-contacts-address">
-          <a class="contact-phone" href="tel:88121212">+7 (812) 812-12-12</a>
-        </address>
-        <img src="images/htmlacademy_logo.svg" width="115" height="33" class="html-academy-logo" alt="Логотип компании htmlacademy">
+      <footer class="footer-container">       
+          <div class="footer-content">
+            <h2 class="visually-hidden">Свяжитесь с нами</h2>
+            <h3 class="visually-hidden">Наши соц сети</h3>
+            <ul class="social-media-list">
+              <li class="vk">
+                <a href="#" class="vk-link">VK</a>
+              </li>
+              <li class="tg">
+                <a href="#" class="tg-link">TG</a>
+              </li>
+              <li class="youtube">
+                <a href="#" class="youtube-link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="phone-content">
+            <h3 class="visually-hidden">Наш контактный телефон</h3>
+            <address class="footer-contacts-address">
+              <a class="contact-phone" href="tel:88121212">+7 (812) 812-12-12</a>
+            </address>
+          </div>
+          <div class="footer-content">
+            <img src="images/htmlacademy_logo.svg" width="115" height="33" class="html-academy-logo" alt="Логотип компании htmlacademy">
+          </div>
+        
+        
       </footer>
 
   </body>
