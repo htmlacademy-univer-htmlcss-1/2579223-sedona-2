@@ -58,8 +58,7 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    width: 339px;
-    margin-right: 285px;
+    width: 624px;
     list-style-type: none;
 }
 
@@ -287,6 +286,10 @@ body {
     background-color: #7DB54F;
 }
 
+.button-nav-link {
+    margin-left: 20px;
+}
+
 .subscribe {
     background-image: url("../images/subscribe_main_page.png");
     color: #ffffff;
@@ -430,6 +433,11 @@ body {
     color: #000;
     min-height: 48px;
     min-width: 48px;
+    margin-right: 8px;
+}
+
+.changes-display-link:last-child {
+    margin: 0px
 }
 
 .display-links-container {
@@ -528,8 +536,9 @@ body {
 .pagination {
     display: flex;
     flex-direction: row;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 60px;
     list-style-type: none;
 }
 
@@ -606,6 +615,7 @@ body {
     padding: 40px 70px;
     background-color: #ffffff;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .footer-content-container {
@@ -617,9 +627,11 @@ body {
 
 .social-media-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 142px;
     margin: 0px;
+    padding: 0;
     list-style-type: none;
 }
 
